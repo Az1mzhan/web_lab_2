@@ -1,0 +1,76 @@
+:root {
+  --navy-blue: #0c359e;
+  --pearly-pink: #ee99c2;
+  --light-orange: #ffe3ca;
+  --white-smoke: #f6f5f5;
+}
+
+body {
+  color: var(--white-smoke);
+  background: linear-gradient(35deg, var(--navy-blue), var(--pearly-pink))
+    no-repeat fixed;
+}
+
+button > i {
+  color: var(--white-smoke);
+}
+
+.card {
+  width: 25vw;
+  background-color: var(--white-smoke);
+  color: black;
+  padding-inline: 1.25vw;
+  box-shadow: 0 0 1vw black;
+}
+
+.card:not(:first-child) {
+  margin-top: 7.5vh;
+}
+
+.task-description {
+  margin-top: 2.5vh;
+}
+
+.modal {
+  color: black;
+}
+
+.task-btn-container > button {
+  margin-top: 2.5vh;
+}
+
+.task-btn-container > button {
+  transition: all 0.125s ease-out;
+}
+
+.task-btn-container > button:hover {
+  transform: scale(1.25);
+}
+
+.task-btn-container > button > i {
+  color: gray;
+}
+
+.remove-task-btn:hover > i {
+  color: red;
+}
+
+#tasks-title {
+  margin: 5vh 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 1vw black;
+}
+
+#create-task-modal-btn {
+  margin: 5vh 0;
+  transition: all 0.125s ease-out;
+}
+
+#create-task-modal-btn:hover {
+  opacity: 0.875;
+  transform: scale(1.25);
+}
+
+#create-modal-btn {
+  margin-top: 5vh !important;
+}
